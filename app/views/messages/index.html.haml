@@ -1,0 +1,86 @@
+-# %h1 Messages#index
+-# %p Find me in app/views/messages/index.html.haml
+
+.wrapper
+  = render "side_bar"
+  = render "main_chat"
+
+
+.header
+  
+  .header__side
+   
+    .header__side__box
+      .header__side__box__user
+        peoc
+      .header__side__box__menu
+        = link_to "#", class: "header__side__box__menu__icon" do
+          = icon('fas', 'edit')
+
+        = link_to "#", class: "header__side__box__menu__fab" do
+          = icon('fas', 'cog')
+  .header__logo
+    
+    .header__logo__main
+      .header__logo__main__up
+        test
+      .header__logo__main__down
+        Member:masa
+
+
+    .header__logo__border
+      = link_to "#/", class: "header__logo__border__edit" do
+        edit
+ 
+
+.contents
+  .contents__side
+    .contents__side__logo
+      .contents__side__logo__group
+        jfleowau
+      .contents__side__logo__message
+        テスト
+  
+  
+  
+  
+  
+  
+  .contents__message
+    .contents__message__first
+      .contents__message__first__id
+        peoc
+      .contents__message__first__day
+        2020/01/21
+    .contents__message__comment
+      こんにちは
+    
+
+
+
+
+    .contents__message__btn
+      .contents__message__btn__form
+        .contents__message__btn__form__flame
+
+          .contents__message__btn__form__flame__create
+            type a message
+
+          %label.contents__message__btn__form__flame__image
+            = icon('fas', 'image')
+            %input.contents__message__btn__form__flame__image__hidden{type: 'file'}
+        .contents__message__btn__form__send
+          send
+
+
+
+
+
+d
+
+
+
+
+
+
+   
