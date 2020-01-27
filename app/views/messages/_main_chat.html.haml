@@ -1,0 +1,38 @@
+
+.test
+  .test__message
+
+    .test__message__header
+    
+      .test__message__header__main
+        .test__message__header__main__up
+          test
+        .test__message__header__main__down
+          Member:masa
+      .test__message__header__border
+        = link_to "", class: "header__logo__border__edit" do
+          edit
+
+  
+    .test__message__contents
+      .test__message__contents__form
+        .test__message__contents__form__first
+          .test__message__contents__form__first__id
+            = current_user.name
+          .test__message__contents__form__first__day
+            2020/01/21
+        .test__message__contents__form__comment
+          こんにちは
+
+      .test__message__contents__btn
+        .test__message__contents__btn__form
+          .test__message__contents__btn__form__flame
+
+            .test__message__contents__btn__form__flame__create
+              type a message
+
+            %label.test__message__contents__btn__form__flame__image
+              = icon('fas', 'image')
+              %input.test__message__contents__btn__form__flame__image__hidden{type: 'file'}
+          .test__message__contents__btn__form__send
+            send

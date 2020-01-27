@@ -5,78 +5,165 @@
   = render "side_bar"
   = render "main_chat"
 
+  -# .side-bar
+  -#   //サイドバーの記述
+  -# .main-chat
+  -#   //メッセージの記述
 
-.header
+-# .test
+-#   .test__side
   
-  .header__side
+-#     .test__side__header
    
-    .header__side__box
-      .header__side__box__user
-        peoc
-      .header__side__box__menu
-        = link_to "#", class: "header__side__box__menu__icon" do
-          = icon('fas', 'edit')
+-#       .test__side__header__box
+-#         .test__side__header__box__user
+-#           = current_user.name
+-#         .test__side__header_box__menu
+-#           = link_to new_group_path, class: "test__side__header__box__menu__icon" do
+-#             = icon('fas', 'edit')
 
-        = link_to "#", class: "header__side__box__menu__fab" do
-          = icon('fas', 'cog')
-  .header__logo
+-#           = link_to "#", class: "test__side__header__box__menu__fab" do
+-#             = icon('fas', 'cog')
+
+-#     .test__side__contents
+
+-#       .test__side__contents__logo
+-#         .test__side__contents__logo__group
+-#           jfleowau
+-#         .test__side__contents__logo__message
+-#           テスト
+
+  
+-#   .test__message
+
+-#     .test__message__header
     
-    .header__logo__main
-      .header__logo__main__up
-        test
-      .header__logo__main__down
-        Member:masa
+-#       .test__message__header__main
+-#         .test__message__header__main__up
+-#           test
+-#         .test__message__header__main__down
+-#           Member:masa
+-#       .test__message__header__border
+-#         = link_to "#/", class: "header__logo__border__edit" do
+-#           edit
+
+  
+-#     .test__message__contents
+-#       .test__message__contents__form
+-#         .test__message__contents__form__first
+-#           .test__message__contents__form__first__id
+-#             = current_user.name
+-#           .test__message__contents__form__first__day
+-#             2020/01/21
+-#         .test__message__contents__form__comment
+-#           こんにちは
+
+-#       .test__message__contents__btn
+-#         .test__message__contents__btn__form
+-#           .test__message__contents__btn__form__flame
+
+-#             .test__message__contents__btn__form__flame__create
+-#               type a message
+
+-#             %label.test__message__contents__btn__form__flame__image
+-#               = icon('fas', 'image')
+-#               %input.test__message__contents__btn__form__flame__image__hidden{type: 'file'}
+-#           .test__message__contents__btn__form__send
+-#             send
 
 
-    .header__logo__border
-      = link_to "#/", class: "header__logo__border__edit" do
-        edit
+
+  
+
+  
+
+
+
+
+
+
+-# .side
+  
+-#   .side__header
+   
+-#     .side__header__box
+-#       .side__header__box__user
+-#         peoc
+-#       .side__header_box__menu
+-#         = link_to "new_group_path", class: "side__header__box__menu__icon" do
+-#           = icon('fas', 'edit')
+
+-#         = link_to "#", class: "side__header__box__menu__fab" do
+-#           = icon('fas', 'cog')
+  
+
+-#   .side__contents
+-#     .side__contents__logo
+-#       .side__contents__logo__group
+-#         jfleowau
+-#       .side__contents__logo__message
+-#         テスト
+  
+
+          
+
+-# .message
+
+-#   .message__header
+    
+-#     .message__header__main
+-#       .message__header__main__up
+-#         test
+-#       .message__header__main__down
+-#         Member:masa
+
+
+-#     .message__header__border
+-#       = link_to "#/", class: "header__logo__border__edit" do
+-#         edit
+
+
+-#         -# xxxx
  
 
-.contents
-  .contents__side
-    .contents__side__logo
-      .contents__side__logo__group
-        jfleowau
-      .contents__side__logo__message
-        テスト
+
   
   
   
   
   
   
-  .contents__message
-    .contents__message__first
-      .contents__message__first__id
-        peoc
-      .contents__message__first__day
-        2020/01/21
-    .contents__message__comment
-      こんにちは
+-#   .message__contents
+-#     .message__contents__first
+-#       .message__contents__first__id
+-#         peoc
+-#       .message__contents__first__day
+-#         2020/01/21
+-#     .message__contents__comment
+-#       こんにちは
     
 
 
 
 
-    .contents__message__btn
-      .contents__message__btn__form
-        .contents__message__btn__form__flame
+-#     .message__contents__btn
+-#       .message__contents__btn__form
+-#         .message__contents__btn__form__flame
 
-          .contents__message__btn__form__flame__create
-            type a message
+-#           .message__contents__btn__form__flame__create
+-#             type a message
 
-          %label.contents__message__btn__form__flame__image
-            = icon('fas', 'image')
-            %input.contents__message__btn__form__flame__image__hidden{type: 'file'}
-        .contents__message__btn__form__send
-          send
-
-
+-#           %label.message__contents__btn__form__flame__image
+-#             = icon('fas', 'image')
+-#             %input.message__contents__btn__form__flame__image__hidden{type: 'file'}
+-#         .message__contents__btn__form__send
+-#           send
 
 
 
-d
+
+
+
 
 
 
