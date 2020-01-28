@@ -9,9 +9,10 @@
 
  
 
-.test {
+.wrapper {
   display: flex;
-  &__side {
+
+  .test__side {
     
     &__header {
       background-color: #253141;
@@ -74,7 +75,7 @@
   
   
   
-  &__message {
+  .test__message {
     &__header {
       display: flex;
       justify-content: space-between;
@@ -154,11 +155,12 @@
           
 
         }
-    
+    }
+  }    
+      
         
-        
     
-        &__btn {
+  .test__message__contents__btn {
           background-color: #d2d2d2;
           height: 90px;
           position: absolute;
@@ -185,6 +187,7 @@
               &__create {
                 line-height: 50px;
                 margin-left: 10px;
+                border-style: none;
               }
     
               &__image {
@@ -204,17 +207,17 @@
               width: 100px;
               background-color: #38aef0;
               color: #ffffff;
-              margin-right: 40px;
+              margin: auto 40px 0 0;
               padding: 0 30px;
               line-height: 50px; 
             }
           } 
         }
-      }
+      
   
   
 
-  }
+  
 }
 
 

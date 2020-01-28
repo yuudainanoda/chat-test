@@ -2,29 +2,29 @@
 
 
 
-.test
-  .test__side
+
+.test__side
   
-    .test__side__header
+  .test__side__header
    
-      .test__side__header__box
-        .test__side__header__box__user
-          = current_user.name
-        .test__side__header_box__menu
-          = link_to new_group_path, class: "test__side__header__box__menu__icon" do
-            = icon('fas', 'edit')
+    .test__side__header__box
+      .test__side__header__box__user
+        = current_user.name
+      .test__side__header_box__menu
+        = link_to new_group_path, class: "test__side__header__box__menu__icon" do
+          = icon('fas', 'edit')
 
-          = link_to "", class: "test__side__header__box__menu__fab" do
-            = icon('fas', 'cog')
+        = link_to "", class: "test__side__header__box__menu__fab" do
+          = icon('fas', 'cog')
 
-    .test__side__contents
-      - current_user.groups.each do |group|
-        .test__side__contents__logo
-          = link_to "", do
-            .test__side__contents__logo__group
-              = group.name
-            .test__side__contents__logo__message
-              メッセージはまだありません。
+  .test__side__contents
+    - current_user.groups.each do |group|
+      .test__side__contents__logo
+        = link_to group_messages_path(group) do
+          .test__side__contents__logo__group
+            = group.name
+          .test__side__contents__logo__message
+            = group.show_last_message
 
      
      
