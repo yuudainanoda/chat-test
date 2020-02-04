@@ -18,13 +18,8 @@
 
   
   .test__message__contents
-    .test__message__contents__form
-      .test__message__contents__form__first
-        .test__message__contents__form__first__id
-          = current_user.name
-        .test__message__contents__form__first__day
-          2020/01/21
-      .test__message__contents__form__comment
+    = render @messages
+    
         
     
 

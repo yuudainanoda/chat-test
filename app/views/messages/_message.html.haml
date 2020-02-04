@@ -1,0 +1,10 @@
+.test__message__contents__form
+  .test__message__contents__form__first
+    .test__message__contents__form__first__id
+      = message.user.name
+    .test__message__contents__form__first__day
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .test__message__contents__form__comment
+    - if message.content.present?
+      = message.content
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
