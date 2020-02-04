@@ -50,14 +50,10 @@
       width: 300px;
       padding-top: 10px;
     
-      // position: relative;
-  
       &__logo {
-        // position: absolute;
         margin: 20px;
         color: #ffffff;
        
-  
         &__group {
           color: #ffffff;
           font-size: 15px;  
@@ -124,18 +120,11 @@
         
         &__form {
           padding-top: 20px;
-          // position: relative;
-          // display: block;
-
-          
 
           &__first {
             margin: 35px 0 10px 40px;
-            // position: absolute;
             display: flex;
-            
-            
-      
+          
             &__id {
               font-size: 16px;
               color: #333333;
@@ -151,14 +140,9 @@
           }
   
           &__comment {
-            // position: absolute;
             margin: 20px 0 0 40px;
-            // margin: 35px 0 10px 80px;
-            color: #434a43;
-          
-          }
-          
-
+            color: #434a43;         
+          }         
         }
     }
   }    
