@@ -115,20 +115,25 @@
   
   
     &__contents {
+        overflow: scroll;
    
         
         background-color: #fafafa;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 100px - 90px);
         width: calc(100vw - 300px);
         
         &__form {
-          position: relative;
+          padding-top: 20px;
+          // position: relative;
+          // display: block;
+
           
 
           &__first {
             margin: 35px 0 10px 40px;
-            position: absolute;
+            // position: absolute;
             display: flex;
+            
             
       
             &__id {
@@ -146,8 +151,8 @@
           }
   
           &__comment {
-            position: absolute;
-            margin: 70px 0 0 40px;
+            // position: absolute;
+            margin: 20px 0 0 40px;
             // margin: 35px 0 10px 80px;
             color: #434a43;
           

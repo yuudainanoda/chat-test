@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 module ChatTest
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.time_zone = 'Tokyo'
 
     
     config.load_defaults 5.2
