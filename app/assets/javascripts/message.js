@@ -1,7 +1,6 @@
 $(function(){ 
 
  
-  console.log(last_message_id);
 
   function buildHTML(message){
    if ( message.image ) {
@@ -92,6 +91,7 @@ $('#new_message').on('submit', function(e){
      
     })
     .fail(function() {
+      alert("メッセージの投稿に失敗しました");
       console.log('error');
     });
 
