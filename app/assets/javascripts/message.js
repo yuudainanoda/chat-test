@@ -66,11 +66,6 @@ $('#new_message').on('submit', function(e){
     });
   })
 
-  // ↓APIaaaaaaaaaaaaaaaaaaaaa
-
-
-  
-
   var reloadMessages = function() {
     last_message_id = $('.test__message__contents__form:last').data("message-id");
     $.ajax({
@@ -85,18 +80,17 @@ $('#new_message').on('submit', function(e){
         $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
         });
-        $('.messages').append(insertHTML);
-        $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+        $('.test__message__contents').append(insertHTML);
+        $('.test__message__contents').animate({ scrollTop: $('.test__message__contents')[0].scrollHeight});
       }
      
     })
     .fail(function() {
       alert("メッセージの投稿に失敗しました");
-      console.log('error');
     });
 
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-      setInterval(reloadMessages, 7000);
     } 
   };
+  setInterval(reloadMessages, 7000);
 });
