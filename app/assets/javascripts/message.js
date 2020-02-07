@@ -66,6 +66,11 @@ $('#new_message').on('submit', function(e){
     });
   })
 
+  
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+    setInterval(reloadMessages, 7000);
+  } 
+  
   var reloadMessages = function() {
     last_message_id = $('.test__message__contents__form:last').data("message-id");
     $.ajax({
@@ -86,11 +91,12 @@ $('#new_message').on('submit', function(e){
      
     })
     .fail(function() {
-      alert("メッセージの投稿に失敗しました");
+      alert("zidoukousin sippai");
     });
 
-    if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-    } 
+   
   };
-  setInterval(reloadMessages, 7000);
+
+  
+  
 });
