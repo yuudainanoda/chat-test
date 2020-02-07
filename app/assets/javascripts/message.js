@@ -19,7 +19,7 @@ $(function(){
              ${message.content}
            </p>
          </div>
-         <img src=${message.image} >
+         <img src=${message.image} class="test__message__contents__form__comment">
        </div>`
      return html;
    } else {
@@ -66,11 +66,8 @@ $('#new_message').on('submit', function(e){
     });
   })
 
-  
-  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-    setInterval(reloadMessages, 7000);
-  } 
-  
+
+
   var reloadMessages = function() {
     last_message_id = $('.test__message__contents__form:last').data("message-id");
     $.ajax({
@@ -85,6 +82,7 @@ $('#new_message').on('submit', function(e){
         $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
         });
+
         $('.test__message__contents').append(insertHTML);
         $('.test__message__contents').animate({ scrollTop: $('.test__message__contents')[0].scrollHeight});
       }
@@ -96,6 +94,10 @@ $('#new_message').on('submit', function(e){
 
    
   };
+
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+    setInterval(reloadMessages, 7000);
+  } 
 
   
   
